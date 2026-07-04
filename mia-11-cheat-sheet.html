@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cheat sheet · Mia Terminal Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="index.html">Start</a>
+    <a href="mia-00-install-iterm2.html">Install</a>
+    <a href="mia-01-where-am-i.html">Where am I?</a>
+    <a href="mia-02-moving-around.html">Move</a>
+    <a href="mia-03-paths.html">Paths</a>
+    <a href="mia-04-making-things.html">Create</a>
+    <a href="mia-10-practice-mission.html">Practice</a>
+    <a class="active" aria-current="page" href="mia-11-cheat-sheet.html">Cheat sheet</a>
+  </nav>
+  <section class="hero lesson-hero">
+    <span class="kicker">Lesson 11</span>
+    <h1>Cheat sheet</h1>
+    <p class="lede">All the commands and symbols from the course in one safe place.</p>
+  </section>
+</header>
+<main>
+  <section class="section callout green">
+    <h2>How to use this page</h2>
+    <p>First check whether the item is a terminal command or a keyboard shortcut. A terminal command is text you type into iTerm2 and run with Return. A keyboard shortcut is a key, or group of keys, you press on the keyboard. <code>~</code> means your home folder, usually something like <code>/Users/mia</code>.</p>
+  </section>
+
+  <section class="section">
+    <h2>Terminal commands</h2>
+    <p>Type these into iTerm2, then press Return.</p>
+    <div class="grid" aria-label="Terminal command cheat sheet cards">
+      <div class="card"><h2><code>pwd</code></h2><p>Shows where Terminal is standing right now. Read it as “where am I?”</p></div>
+      <div class="card"><h2><code>ls</code></h2><p>Lists what is inside the current folder.</p></div>
+      <div class="card"><h2><code>cd folder</code></h2><p>Moves into a folder. Example: <code>cd Desktop</code>.</p></div>
+      <div class="card"><h2><code>cd ..</code></h2><p>Moves one folder up.</p></div>
+      <div class="card"><h2><code>cd ~</code></h2><p>Moves back to your home folder.</p></div>
+      <div class="card"><h2><code>cd ~/Desktop</code></h2><p>Moves to the Desktop folder inside your home folder.</p></div>
+      <div class="card"><h2><code>open .</code></h2><p>Opens the current folder in Finder. The dot means “here”.</p></div>
+      <div class="card"><h2><code>mkdir name</code></h2><p>Makes a new folder. Example: <code>mkdir notes</code>.</p></div>
+      <div class="card"><h2><code>touch file.txt</code></h2><p>Makes a blank file if it does not already exist.</p></div>
+      <div class="card"><h2><code>rm file.txt</code></h2><p>Deletes one file. Slow down before you press Return.</p></div>
+      <div class="card"><h2><code>rmdir folder</code></h2><p>Deletes an empty folder. It refuses if the folder still contains files.</p></div>
+      <div class="card"><h2><code>clear</code></h2><p>Cleans the screen. It does not delete files.</p></div>
+      <div class="card"><h2><code>q</code></h2><p>Quits many full-screen views, like help pages or logs.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Keyboard shortcuts</h2>
+    <p>Press these on the keyboard. Do not type the words into iTerm2.</p>
+    <div class="grid" aria-label="Keyboard shortcut cheat sheet cards">
+      <div class="card"><h2><code>Tab</code></h2><p>Completes folder and file names when Terminal can guess the rest.</p></div>
+      <div class="card"><h2><code>↑</code></h2><p>Brings back the previous command so you do not need to type it again.</p></div>
+      <div class="card"><h2><code>Ctrl+C</code></h2><p>Stops many commands that keep running or feel stuck.</p></div>
+      <div class="card"><h2><code>Command (⌘) +</code></h2><p>Makes the iTerm2 text bigger.</p></div>
+    </div>
+  </section>
+
+  <section class="section card">
+    <h2>Symbols you learned</h2>
+    <div class="steps">
+      <div class="step"><h3><code>~</code></h3><p><code>~</code> means your home folder. Example: <code>cd ~</code>.</p></div>
+      <div class="step"><h3><code>.</code></h3><p><code>.</code> means the folder where Terminal is standing now. Example: <code>open .</code>.</p></div>
+      <div class="step"><h3><code>..</code></h3><p><code>..</code> means one folder above where Terminal is standing. Example: <code>cd ..</code>.</p></div>
+      <div class="step"><h3><code>"My Folder"</code></h3><p>Quotes protect names with spaces. Example: <code>cd "Holiday Photos"</code>.</p></div>
+    </div>
+  </section>
+
+  <section class="section card">
+    <h2>Safe practice run</h2>
+    <p class="terminal-guidance">Type only the lines marked <strong>TYPE THIS</strong>. Do not type lines marked <strong>MAC REPLIES</strong> or <strong>NOTE</strong>.</p>
+    <div class="terminal" role="group" aria-label="Terminal practice block">
+      <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">cd ~/Desktop</code></div>
+      <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">pwd</code></div>
+      <div class="terminal-line output"><span class="terminal-label output">MAC REPLIES</span><code class="terminal-output">/Users/mia/Desktop</code></div>
+      <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">ls</code></div>
+      <div class="terminal-line note"><span class="terminal-label note">NOTE</span><code class="terminal-note">The list you see depends on what is on your Desktop.</code></div>
+    </div>
+  </section>
+
+  <section class="section callout red">
+    <h2>Still avoid these</h2>
+    <p>If a random tutorial asks for <code>sudo</code>, <code>rm -rf</code>, <code>chmod</code>, or <code>chown</code>, stop and ask someone first. Those commands can change or delete important things.</p>
+  </section>
+
+  <div class="next-prev"><a class="back" href="mia-10-practice-mission.html">Previous</a><a class="back" href="index.html">Back to start</a></div>
+</main>
+<footer>
+  <p>Mia Terminal Basics is a beginner course for Mac users. Type slowly, read what the command says, and avoid dangerous commands you do not understand.</p>
+</footer>
+</body>
+</html>

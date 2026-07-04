@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delete carefully · Mia Terminal Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="index.html">Start</a>
+    <a href="mia-00-install-iterm2.html">Install</a>
+    <a href="mia-01-where-am-i.html">Where am I?</a>
+    <a href="mia-02-moving-around.html">Move</a>
+    <a href="mia-03-paths.html">Paths</a>
+    <a href="mia-04-making-things.html">Create</a>
+    <a href="mia-10-practice-mission.html">Practice</a>
+    <a href="mia-11-cheat-sheet.html">Cheat sheet</a>
+  </nav>
+  <section class="hero lesson-hero">
+    <span class="kicker">Lesson 08</span>
+    <h1>Delete carefully</h1>
+    <p class="lede">Deletion in Terminal is real. Slow down here.</p>
+  </section>
+</header>
+<main>
+  <section class="section">
+    <h2>What you are learning</h2>
+    <div class="steps">
+    <div class="step"><h3>Delete one file</h3><p>Use <code>rm file.txt</code> only when you know the exact file.</p></div>
+    <div class="step"><h3>Remove an empty folder</h3><p>Use <code>rmdir empty-folder</code>. It refuses if the folder still has things inside.</p></div>
+    <div class="step"><h3>Pause on dangerous commands</h3><p>Do not run <code>sudo</code> or <code>rm -rf</code> from a random tutorial. Ask someone first.</p></div>
+    </div>
+  </section>
+  <section class="section card">
+    <h2>Try this</h2>
+    <p class="terminal-guidance">Type only the lines marked <strong>TYPE THIS</strong>. Do not type lines marked <strong>MAC REPLIES</strong> or <strong>NOTE</strong>.</p>
+    <div class="terminal" role="group" aria-label="Terminal practice block">
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">touch test-delete-me.txt</code></div>
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">rm test-delete-me.txt</code></div>
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">mkdir empty-folder</code></div>
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">rmdir empty-folder</code></div>
+        </div>
+  </section>
+  <section class="section callout green">
+    <h2>Teacher note</h2>
+    <p>The terminal will not always ask “are you sure?” Treat delete commands with respect.</p>
+  </section>
+  <section class="section card">
+    <h2>Tiny mission</h2>
+    <ol>
+      <li>Read the line label first.</li>
+      <li>Type only the lines marked <strong>TYPE THIS</strong> into iTerm2.</li>
+      <li>Say what changed on your Mac.</li>
+    </ol>
+  </section>
+  <div class="next-prev"><a class="back" href="mia-07-command-shapes.html">Previous</a><a class="back" href="mia-09-getting-unstuck.html">Next</a></div>
+</main>
+<footer>
+  <p>Mia Terminal Basics is a beginner course for Mac users. Type slowly, read what the command says, and avoid dangerous commands you do not understand.</p>
+</footer>
+</body>
+</html>

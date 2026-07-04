@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice mission · Mia Terminal Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="index.html">Start</a>
+    <a href="mia-00-install-iterm2.html">Install</a>
+    <a href="mia-01-where-am-i.html">Where am I?</a>
+    <a href="mia-02-moving-around.html">Move</a>
+    <a href="mia-03-paths.html">Paths</a>
+    <a href="mia-04-making-things.html">Create</a>
+    <a class="active" aria-current="page" href="mia-10-practice-mission.html">Practice</a>
+  </nav>
+  <section class="hero lesson-hero">
+    <span class="kicker">Lesson 10</span>
+    <h1>Practice mission</h1>
+    <p class="lede">Put the basics together in one safe exercise.</p>
+  </section>
+</header>
+<main>
+  <section class="section">
+    <h2>What you are learning</h2>
+    <div class="steps">
+    <div class="step"><h3>Create a practice area</h3><p>Work on the Desktop so you can see what happens in Finder.</p></div>
+    <div class="step"><h3>Move, list, and open</h3><p>Use the commands from earlier lessons in one flow.</p></div>
+    <div class="step"><h3>Explain it back</h3><p>If you can explain each line, you are learning the terminal properly.</p></div>
+    </div>
+  </section>
+  <section class="section card">
+    <h2>Try this</h2>
+    <p class="terminal-guidance">Type only the lines marked <strong>TYPE THIS</strong>. Do not type lines marked <strong>MAC REPLIES</strong> or <strong>NOTE</strong>.</p>
+    <div class="terminal" role="group" aria-label="Terminal practice block">
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">cd ~/Desktop</code></div>
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">mkdir mia-practice</code></div>
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">cd mia-practice</code></div>
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">mkdir notes screenshots projects</code></div>
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">touch notes/first-note.txt</code></div>
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">ls</code></div>
+          <div class="terminal-line output"><span class="terminal-label output">MAC REPLIES</span><code class="terminal-output">notes  projects  screenshots</code></div>
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">open .</code></div>
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">cd ..</code></div>
+          <div class="terminal-line type"><span class="terminal-label type">TYPE THIS</span><code class="terminal-command">pwd</code></div>
+        </div>
+  </section>
+  <section class="section callout green">
+    <h2>Teacher note</h2>
+    <p>You used <code>~</code>, <code>cd</code>, <code>mkdir</code>, <code>touch</code>, <code>ls</code>, and <code>open .</code> in one mission.</p>
+  </section>
+  <section class="section card">
+    <h2>Tiny mission</h2>
+    <ol>
+      <li>Read the line label first.</li>
+      <li>Type only the lines marked <strong>TYPE THIS</strong> into iTerm2.</li>
+      <li>Say what changed on your Mac.</li>
+    </ol>
+  </section>
+  <div class="next-prev"><a class="back" href="mia-09-getting-unstuck.html">Previous</a><a class="back" href="mia-11-cheat-sheet.html">Next</a></div>
+</main>
+<footer>
+  <p>Mia Terminal Basics is a beginner course for Mac users. Type slowly, read what the command says, and avoid dangerous commands you do not understand.</p>
+</footer>
+</body>
+</html>

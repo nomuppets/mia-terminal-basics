@@ -1,0 +1,10 @@
+{
+  "name": "mia-terminal-basics",
+  "version": "2026.7.4",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/validate-site.mjs",
+    "generate:hero": "node scripts/generate-hero-image.mjs"
+  }
+}
