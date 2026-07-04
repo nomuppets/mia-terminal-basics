@@ -2,11 +2,7 @@
 
 A calm first course for using iTerm2 and the Mac terminal without panic.
 
-Live site, once GitHub Pages is enabled:
-
-```text
-https://nomuppets.github.io/mia-terminal-basics/
-```
+Live site: [Mia Terminal Basics](https://nomuppets.github.io/mia-terminal-basics/)
 
 ## The promise
 
@@ -108,11 +104,7 @@ The cheat sheet still warns Mia to stop and ask before running destructive or pe
 
 ## Official iTerm2 link
 
-The install lesson links to the official iTerm2 downloads page:
-
-```text
-https://iterm2.com/downloads.html
-```
+The install lesson links to the official [iTerm2 downloads page](https://iterm2.com/downloads.html).
 
 ## Local preview
 
@@ -154,11 +146,7 @@ Regenerate it only when the visual direction changes.
 
 This repo is designed for GitHub Pages from the `master` branch root.
 
-Expected Pages URL:
-
-```text
-https://nomuppets.github.io/mia-terminal-basics/
-```
+Pages URL: [https://nomuppets.github.io/mia-terminal-basics/](https://nomuppets.github.io/mia-terminal-basics/)
 
 ## Maintenance
 
