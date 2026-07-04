@@ -146,19 +146,9 @@ The validator checks:
 
 ## Hero image
 
-The approved hero image lives at:
+The approved hero image lives in the assets folder and is already committed.
 
-```text
-assets/mia-hero.jpg
-```
-
-To regenerate it with xAI:
-
-```bash
-npm run generate:hero
-```
-
-The script reads `XAI_API_KEY` from the environment or `~/.pi/agent/auth.json` at runtime. It does not print the key.
+Regenerate it only when the visual direction changes.
 
 ## Publish
 
