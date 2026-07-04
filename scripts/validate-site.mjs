@@ -38,6 +38,7 @@ for (const file of htmlFiles) {
   if (!html.includes('class="terminal"')) failures.push(`${file}: missing terminal-style example`);
   if (!html.includes('TYPE THIS')) failures.push(`${file}: terminal examples must label learner input with TYPE THIS`);
   if (!html.includes('Type only the lines marked')) failures.push(`${file}: terminal examples must warn learners not to type output lines`);
+  if (!html.includes('href="mia-11-cheat-sheet.html"')) failures.push(`${file}: missing Cheat sheet navigation link`);
   if (!html.includes('Mia Terminal Basics')) failures.push(`${file}: missing course title`);
 
   const hrefs = [...html.matchAll(/href="([^"]+)"/g)].map(match => match[1]);
